@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300|700);
 
 body {
   background: url('http://bossfight.co/wp-content/uploads/2016/06/boss-fight-free-high-quality-stock-images-photos-photography-pink-flowers.jpg') fixed;
@@ -7,7 +8,8 @@ body {
 }
 
 img {
-  width: 200px;
+  min-width: 100px;
+  max-width: 250px;
 }
 
 header {
@@ -21,9 +23,31 @@ header {
 main {
   background: white;
   padding: 20px;
+  margin: 0px;
   height: 800px;
 }
 
 footer  {
-  left: 50%;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+a:link {
+  color: darkgray;
+  border-bottom: 1px dashed pink;
+}
+
+a:visited {
+  color: red;
+  border-bottom: 1px dashed pink;
+}
+
+ul li {
+  list-style-type: none;
+  font-family: "Roboto Slab", serf;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: darkgreen;
 }
