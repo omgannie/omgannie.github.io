@@ -56,9 +56,16 @@ ul li {
   color: darkgreen;
 }
 
-em .subtext {
+em.subtext {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   font-size: 0.3em;
   color: gray;
+}
+
+@media screen (min-width:400px;) {
+  header {
+    background: pink;
+  }
+
 }
