@@ -25,6 +25,8 @@ main {
   padding: 20px;
   margin: 0px;
   height: 800px;
+  width: 100%;
+
 }
 
 footer  {
@@ -32,10 +34,12 @@ footer  {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   text-align: center;
+  padding: 20px;
 }
 
 a:link {
   color: darkgray;
+  text-decoration: none;
   border-bottom: 1px dashed pink;
 }
 
@@ -50,4 +54,11 @@ ul li {
   font-weight: 300;
   font-size: 0.8em;
   color: darkgreen;
+}
+
+em .subtext {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 0.3em;
+  color: gray;
 }
