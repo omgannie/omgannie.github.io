@@ -11,10 +11,17 @@ img {
 }
 
 header {
-  border: 1px dashed darkblue;
+  border: 10px solid gray;
   background-color: white;
   padding: 20px;
-  margin: 20px;
+  height: 500px;
+  margin: 40px;
+}
+
+main {
+  background: white;
+  padding: 20px;
+  height: 800px;
 }
 
 footer  {
