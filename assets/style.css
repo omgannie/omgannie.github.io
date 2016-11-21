@@ -30,6 +30,7 @@ header {
  	z-index: 2;
   position: relative;
 	height: 100%;
+	background-color: white;
   background: url('imgs/casualphoto.jpg') no-repeat scroll center;
 	background-size: cover;
 	background-blend-mode: soft light;
@@ -51,21 +52,10 @@ header h1 {
   margin: 0;
   text-align: center;
   color: #FFF;
-	text-shadow: 5px 5px 0 #42A7FF;
   font-family: Karla, sans-serif;
   font-size: 3em;
 	line-height: 1.5;
 	}
-
-	header h2 {
-		position: relative;
-		z-index: 2;
-		font-size: 1.75rem;
-		text-align: center;
-		font-weight: normal;
-		color: #fff;
-		top: 40%;
-		}
 
 header hgroup {
   -webkit-transform: translate(-50%, -50%);
@@ -74,14 +64,10 @@ header hgroup {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   display: inline-block;
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #fff;
-  border: 5px solid #fff;
-  padding: .5em 3em;
-  background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 

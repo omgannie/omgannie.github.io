@@ -20,6 +20,10 @@
     </div>
   </header>
 
+  <nav>
+
+  </nav>
+
   <main>
 
   </main>
@@ -87,7 +91,7 @@
 
         <b>var</b> frameworks = [<i>"Rails"</i>, <i>"Sinatra"</i>, <i>"AngularJS"</i>];<BR><BR>
 
-        <b>var</b> currentlyLearning = [<i>"Swift"</i>]
+        <b>var</b> currentlyLearning = [<i>"Swift"</i>];<BR><BR>
 
         <b>var</b> librariesAndAPIs = [<i>"jQuery"</i>, <i>"D3"</i>, <i>"AJAX"</i>, <i>"GoogleMaps API"</i>, <i>"Spotify API"</i>, <i>"Watson Tone Analyzer API"</i>];<BR><BR>
 
@@ -105,5 +109,15 @@
         <b>console.</b>log(<i>"Be sure to check out my <a href="https://www.github.com/omgannie">Github</a>!"</i>);
     </div>
   </footer>
+<script src="assets/jquery-2.1.4.js"></script>
+<script src="assets/parallaxblur.js"></script>
+<script src="assets/jquery.sticky.js"></script>
+<script src="https://use.fontawesome.com/8a948bba08.js"></script>
+<script>
+    $(window).load(function(){
+      $("nav").sticky({ topSpacing: 0 });
+    });
+  </script>
+  <script src="assets/gallery.js"></script>
  </body>
 </html>
