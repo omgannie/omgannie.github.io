@@ -1,2 +1,2 @@
 # omgannie.github.io
-user site using github pages
+user portfolio site using github pages
