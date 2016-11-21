@@ -23,6 +23,10 @@ footer {
   display: block;
 }
 
+.numbers ul li {
+  list-style: none;
+}
+
  .code {
   position: fixed;
   z-index: 0;
