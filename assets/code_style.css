@@ -24,7 +24,7 @@ footer {
 }
 
 .numbers ul li {
-  list-style: none;
+  list-style-type: none;
 }
 
  .code {
@@ -60,7 +60,12 @@ footer {
 				color: pink;
 				text-decoration: none;
 				font-weight: bold;
+        transition: 0.3s all ease-in;
 				}
+
+      .code a:hover {
+        color: #F2545B;
+      }
 
 
 	@media only screen and (max-width: 450px) {
