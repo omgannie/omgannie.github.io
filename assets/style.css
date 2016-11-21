@@ -94,6 +94,11 @@ nav {
 	clear: both;
 	}
 
+	ul li {
+		display: inline-block;
+		list-style-type: none;
+	}
+
 	nav a {
 		z-index: 4;
 		color: #ccc;
