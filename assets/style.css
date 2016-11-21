@@ -22,11 +22,15 @@ body {
   padding: 0;
 }
 
+a:link, a:visited {
+	color: gray;
+}
+
 header {
  	z-index: 2;
-  	position: relative;
+  position: relative;
 	height: 100%;
-  	background: url('imgs/casualphoto.jpg') no-repeat scroll center;
+  background: url('imgs/casualphoto.jpg') no-repeat scroll center;
 	background-size: cover;
 	background-blend-mode: soft light;
 }
@@ -44,13 +48,13 @@ header h1 {
 	position: relative;
  	z-index: 2;
 	top: 30%;
-  	margin: 0;
-  	text-align: center;
-  	color: #FFF;
+  margin: 0;
+  text-align: center;
+  color: #FFF;
 	text-shadow: 5px 5px 0 #42A7FF;
   font-family: Karla, sans-serif;
-  font-size: 5em;
-  letter-spacing: 3px;
+  font-size: 3em;
+	line-height: 1.5;
 	}
 
 	header h2 {
