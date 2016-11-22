@@ -24,20 +24,20 @@ body {
 
 a:link, a:visited {
 	color: gray;
+	transition: 0.3s all ease-in;
+}
+
+a:hover {
+	color: black;
 }
 
 header {
-	background-color: white;
  	z-index: 2;
   position: relative;
 	height: 100%;
-	background-color: #ccc;
   background: url('/imgs/casualphoto.jpg') no-repeat scroll center;
 	background-size: cover;
 	background-blend-mode: soft light;
-
-	-webkit-filter: blur(1.5px);
-	-webkit-filter: brightness(-50%);
 }
 
 header .greeting {
@@ -47,6 +47,7 @@ header .greeting {
 	right: 0;
 	bottom: 0;
 	z-index: 2;
+	background-color: #70C4AF;
 	}
 
 header h1 {
@@ -72,6 +73,7 @@ header hgroup {
   top: 50%;
   left: 50%;
   z-index: 2;
+	width: 70%;
 }
 
 header .overlay {
@@ -81,7 +83,7 @@ header .overlay {
   right: 0;
   left: 0;
   bottom: 0;
-  background:#000 center no-repeat;
+  background:#ccc center no-repeat;
   background-size: cover;
    opacity: 0.5;  -webkit-filter: blur(4px);
 }
@@ -99,7 +101,7 @@ nav {
 	nav ul li {
 		display: inline-block;
 		list-style-type: none;
-		padding: 10px 20px 20px 10px;
+		padding: 15px;
 	}
 
 	nav a {
@@ -217,4 +219,27 @@ main {
   -moz-animation: bounce 4s hover;
   -webkit-animation: bounce 4s hover;
   animation: bounce 4s hover;
+}
+
+main #projects {
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.show {
+	width: 30%;
+	line-height: normal;
+	margin: 0;
+}
+
+.show img {
+	width: 50%;
+	display: block;
+	justify-content: center;
 }

@@ -109,7 +109,7 @@
 
 .port img {
   width: 50%;
-  display: inline-block;
+  display: block;
 }
 .port .description {
   float: right;
@@ -130,7 +130,6 @@
   font-weight: normal;
   font-size: 1em;
   line-height: .8em;
-  text-align: center;
 }
 
 .port p {
@@ -222,6 +221,5 @@
     font-weight: normal;
     font-size: 1em;
     line-height: none;
-    text-align: center;
   }
 }

@@ -9,13 +9,13 @@
 <link rel="stylesheet" href="assets/code_style.css" media="screen" title="no title">
 <link rel="stylesheet" href="assets/gallery.css" media="screen" title="no title">
 <link rel="stylesheet" href="assets/animate.css" media="screen" title="no title">
-<body>
+<body class="animated fadeInDown">
   <header id="home">
     <div class="greeting">
       <hgroup>
-        <h1><a href="#about">Annie Oh</a> is a <a href="portfolio.pdf">former UX/UI Designer</a> who now seeks opportunities as a <a href="#projects">Full-Stack Web Developer.</a></h1>
+        <h1><a href="#about">Annie Oh</a> is a <a href="portfolio.pdf">former UX/UI Designer</a> who now seeks opportunities as a <BR><a href="#projects">Full-Stack Web Developer.</a></h1>
       </hgroup>
-      <div class="arrow animated bounce">
+      <div class="arrow animated bounce infinite">
       </div>
       <div class="overlay">
       </div>
@@ -37,13 +37,39 @@
         </a>
       </li>
       <li>
+        <a href="http://www.linkedin.com/in/omgannie"><i class="fa fa-linkedin fa-lg"></i></a>
+      </li>
+      <li>
         <a href="mailto:annie_oh@icloud.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
   </nav>
 
-  <main>
+  <main id="projects">
+    <BR>
+    <h1>Projects</h1>
+
+        <div class="show">
+          <a href="https://play-with-litmus.herokuapp.com/"><img src="imgs/litmus/1.png"></a>
+          <h1>Litmus</h1>
+          <h2>Role: Front-End & Back-End; Watson, Spotify, D3.js integration</h2>
+          <h3>Stack: Rails, JavaScript, </h3>
+
+          <a href="http://www.github.com/omgannie/litmus"><i class="fa fa-github fa-2x"></i></a>
+          &nbsp; &nbsp;
+          <a href="https://play-with-litmus.herokuapp.com/"><i class="fa fa-eye fa-2x"></i></a>
+
+          <p>
+            A Rails app that uses Watson's Tone Analyzer API in conjunction with Spotify's Web API and D3.js to return emotional data range and a song that best matches the emotions detected within the user's text input.
+          </p>
+        </div>
+
+        <div class="show">
+          <a href="https://dukeflix.herokuapp.com"><img src="imgs/dukeflix/1.png"></a>
+          <h1>Dukeflix</h1>
+          <h2>Role: Back-End User Story Logic</h2>
+        </div>
 
   </main>
 
@@ -80,16 +106,6 @@
         <li>28</li>
         <li>29</li>
         <li>30</li>
-        <li>31</li>
-        <li>32</li>
-        <li>33</li>
-        <li>34</li>
-        <li>35</li>
-        <li>36</li>
-        <li>37</li>
-        <li>38</li>
-        <li>39</li>
-        <li>40</li>
       </ul>
     </div>
 
@@ -97,7 +113,7 @@
       <B>var</B> annieOh = <B>function</B> <u>Person</u> () {<BR>
         <blockquote>
           name: <i>"Annie Oh"</i>,<BR>
-          currentStatus: <i>"looking for new opportunities"</i>,<BR>
+          currentStatus: <i>"Recent Dev Bootcamp grad; looking for new opportunities"</i>,<BR>
           frontEnd: <u>true</u>,<BR>
           backEnd: <u>true</u>,<BR>
           fullStack: <u>true</u>,<BR>
@@ -120,7 +136,7 @@
 
         <b>var</b> deployment = [<i>"Heroku"</i>, <i>"Jekyll"</i>, <i>"Cyberduck"</i>];<BR>
 
-        <b>var</b> designSkills = [<i>"Creative Direction"</i>, <i>"Branding Identity"</i>, <i>"UI/UX Design"</i>, <i>"Print"</i>];<BR>
+        <b>var</b> designSkills = [<i>"Creative Direction"</i>, <i>"Branding Identity"</i>, <i>"UI/UX Design"</i>, <i>"Print"</i>];<BR><BR>
 
         <B>console.</B>log(<i>"Thanks for visiting! Let's keep in touch. Click <a href="mailto:annie_oh@icloud.com">here</a> to contact me."</i>);<BR>
         <b>console.</b>log(<i>"Be sure to check out my <a href="https://www.github.com/omgannie">Github</a>!"</i>);
@@ -134,6 +150,20 @@
     $(window).load(function(){
       $("nav").sticky({ topSpacing: 0 });
     });
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+
   </script>
   <script src="assets/gallery.js"></script>
  </body>
