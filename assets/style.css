@@ -48,6 +48,7 @@ header .greeting {
 	bottom: 0;
 	z-index: 2;
 	background-color: #70C4AF;
+	opacity: 0.7;
 	}
 
 header h1 {
