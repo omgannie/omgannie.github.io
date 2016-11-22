@@ -35,6 +35,9 @@ header {
   background: url('/imgs/casualphoto.jpg') no-repeat scroll center;
 	background-size: cover;
 	background-blend-mode: soft light;
+
+	-webkit-filter: blur(1.5px);
+	-webkit-filter: brightness(-50%);
 }
 
 header .greeting {
