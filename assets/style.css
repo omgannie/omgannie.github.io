@@ -270,7 +270,6 @@ main #projects {
 	top: 400px;
 
 	opacity: 0;
-	transition: 1s all ease-in;
 }
 
 .active li.current {

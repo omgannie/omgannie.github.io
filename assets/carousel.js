@@ -29,7 +29,7 @@ carousel = (function() {
   box.addClass('active');
 
   function navigate(direction) {
-    current.removeClass('current');
+    $(current).removeClass('current');
     counter = counter + direction;
 
     if (direction === -1 && counter < 0) {
@@ -39,7 +39,7 @@ carousel = (function() {
     }
 
     current = items[counter];
-    current.addClass('current');
+    $(current).addClass('current');
   };
 
 
