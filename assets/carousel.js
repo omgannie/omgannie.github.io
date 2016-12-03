@@ -16,14 +16,15 @@ if (target.length) {
 }
 });
 
+// carousel for projects
 carousel = (function() {
   var box = $('.carousel');
   var next = $('.next');
   var prev = $('.prev');
-  var items = $('.content li');
+  var items = $('.projects li');
   var counter = 0;
   var amount = items.length;
-  var current = $('current');
+  var current = $('.current');
 
   box.addClass('active');
 
