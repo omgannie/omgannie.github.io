@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="assets/boilerplate.css" media="screen" title="no title">
 <link rel="stylesheet" href="assets/style.css" media="screen" title="no title">
 <link rel="stylesheet" href="assets/code_style.css" media="screen" title="no title">
-<link rel="stylesheet" href="assets/gallery.css" media="screen" title="no title">
 <link rel="stylesheet" href="assets/animate.css" media="screen" title="no title">
 <body class="animated fadeInDown">
   <header id="home">
@@ -51,27 +50,95 @@
     <BR>
     <h1>Projects</h1>
 
-        <div class="show">
-          <a href="https://play-with-litmus.herokuapp.com/"><img src="imgs/litmus/1.png"></a>
-          <h1>Litmus</h1>
-          <h2>Role: Front-End & Back-End; Watson, Spotify, D3.js integration</h2>
-          <h3>Stack: Rails, JavaScript, </h3>
+    <div class="carousel">
+      <ol class="projects">
+        <li class="current">
+          <div class="project-container">
+            <a href="https://play-with-litmus.herokuapp.com/"><img src="imgs/litmus/1.png"></a>
 
-          <a href="http://www.github.com/omgannie/litmus"><i class="fa fa-github fa-2x"></i></a>
-          &nbsp; &nbsp;
-          <a href="https://play-with-litmus.herokuapp.com/"><i class="fa fa-eye fa-2x"></i></a>
+            <div class="right">
+              <h1>Litmus</h1>
+              <h2>Role: Front-End & Back-End</h2>
+              <h3>Stack: Rails, JavaScript, jQuery, D3.js, Watson Tone Analyzer API, Spotify Web API, HTML, CSS3</h3>
 
-          <p>
-            A Rails app that uses Watson's Tone Analyzer API in conjunction with Spotify's Web API and D3.js to return emotional data range and a song that best matches the emotions detected within the user's text input.
-          </p>
-        </div>
+              <a href="http://www.github.com/omgannie/litmus"><i class="fa fa-github fa-2x"></i></a>
+              &nbsp; &nbsp;
+              <a href="https://play-with-litmus.herokuapp.com/"><i class="fa fa-eye fa-2x"></i></a>
 
-        <div class="show">
-          <a href="https://dukeflix.herokuapp.com"><img src="imgs/dukeflix/1.png"></a>
-          <h1>Dukeflix</h1>
-          <h2>Role: Back-End User Story Logic</h2>
-        </div>
+              <p>
+                A Rails app that uses Watson's Tone Analyzer API in conjunction with Spotify's Web API and D3.js to return emotional data range and a song that best matches the emotions detected within the user's text input.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-container">
+            <a href="https://dukeflix.herokuapp.com"><img src="imgs/dukeflix/1.png"></a>
 
+            <div class="right">
+              <h1>Dukeflix</h1>
+              <h2>Role: Back-End User Interaction</h2>
+              <h3>Stack: Rails, Fandango API, Bootstrap, HTML, CSS3, JavaScript, jQuery</h3>
+
+              <a href="http://www.github.com/omgannie/dukeflix"><i class="fa fa-github fa-2x"></i></a> &nbsp; &nbsp;
+              <a href="https://dukeflix.herokuapp.com/"><i class="fa fa-eye fa-2x"></i></a>
+
+              <p>
+                A Rails app for a Dev Bootcamp facilitated client project. Dukeflix is a website where trusted movie fans can add, review, and rate movies. Regular users can comment on and rate reviews.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-container">
+            <a href="https://godogood.herokuapp.com"><img src="imgs/godogood/1.png" alt=""></a>
+
+            <div class="right">
+              <h1>GoDoGood</h1>
+              <h2>Role: Front-End & Back-End</h2>
+              <h3>Stack: Rails, GoogleMaps API, Materialize</h3>
+
+              <a href="http://www.github.com/omgannie/go-do-good-app"><i class="fa fa-github fa-2x"></i></a>
+              <a href="https://godogood.herokuapp.com"><i class="fa fa-eye fa-2x"></i></a>
+
+              <p>
+                A Rails app that grabs the user's current location and returns nearby non-profity/charity organizations with programs to volunteer at.
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-container">
+            <a href="https://www.github.com/omgannie/256-challenge"><img src="imgs/2048/1.png" alt=""></a>
+
+            <div class="right">
+              <h1>2048 Clone</h1>
+              <h2>Role: Front-End & Back-End</h2>
+              <h3>Stack: JavaScript (Mousetrap.js, undersore.js, jQuery), HTML, CSS</h3>
+
+              <a href="http://www.github.com/omgannie/256-challenge"><i class="fa fa-github fa-2x"></i></a>
+              <a href="/256/index.html"><i class="fa fa-eye fa-2x"></i></a>
+
+              <p>
+                A client-side clone of 2048 game.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+    </div>
+
+    <div class="buttons">
+      <button class="prev">
+        ◀ <span class="offscreen"></span>
+      </button>
+      <button class="next">
+        <span class="offscreen"></span> ▶
+      </button>
+    </div>
   </main>
 
   <footer id="about">
@@ -123,9 +190,9 @@
         &nbsp; &nbsp; &nbsp; };<BR><BR>
         <B>var</B> methodologies = [<i>"Object-Oriented Design"</i>, <i>"Test Driven Development"</i>, <i>"Agile"</i>, <i>"Waterfall"</i>, <i>"RESTful conventions"</i>];<BR>
 
-        <B>var</B> languages = [<i>"Ruby"</i>, <i>"JavaScript"</i>, <i>"HTML5"</i>, <i>"CSS3"</i>, <i>"SASS"</i>, <i>"HAML"</i>];<BR>
+        <B>var</B> languages = [<i>"Ruby"</i>, <i>"JavaScript"</i>, <i>"HTML5"</i>, <i>"CSS3"</i>];<BR>
 
-        <b>var</b> frameworks = [<i>"Rails"</i>, <i>"Sinatra"</i>, <i>"AngularJS"</i>];<BR>
+        <b>var</b> frameworks = [<i>"Rails"</i>, <i>"Sinatra"</i>, <i>"AngularJS"</i>, <i>"SASS"</i>, <i>"Bootstrap"</i>, <i>"Materialize"</i>];<BR>
 
         <b>var</b> librariesAndAPIs = [<i>"jQuery"</i>, <i>"D3"</i>, <i>"AJAX"</i>, <i>"GoogleMaps API"</i>, <i>"Spotify API"</i>, <i>"Watson Tone Analyzer API"</i>];<BR>
 
@@ -133,7 +200,7 @@
 
         <b>var</b> databases = [<i>"SQL (PostgreSQL, SQLite3)"</i>, <i>"ActiveRecord"</i>];<BR>
 
-        <b>var</b> version control = [<i>"Git"</i>, <i>"Github"</i>];<BR>
+        <b>var</b> versionControl = [<i>"Git"</i>, <i>"Github"</i>];<BR>
 
         <b>var</b> deployment = [<i>"Heroku"</i>, <i>"Jekyll"</i>, <i>"Cyberduck"</i>];<BR>
 
@@ -147,25 +214,6 @@
 <script src="assets/parallaxblur.js"></script>
 <script src="assets/jquery.sticky.js"></script>
 <script src="https://use.fontawesome.com/8a948bba08.js"></script>
-<script>
-    $(window).load(function(){
-      $("nav").sticky({ topSpacing: 0 });
-    });
-
-    $('a[href*="#"]:not([href="#"])').click(function() {
-  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    if (target.length) {
-      $('html, body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
-  }
-});
-
-  </script>
-  <script src="assets/gallery.js"></script>
+<script src="assets/carousel.js"></script>
  </body>
 </html>
