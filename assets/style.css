@@ -2,6 +2,16 @@
 /* CSS Document */
 @import url(http://fonts.googleapis.com/css?family=Karla:400,400i,700);
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 html {
 	padding: 0;
@@ -229,18 +239,94 @@ main #projects {
   display: -webkit-flex;
   display: flex;
 
-  -webkit-flex-flow: row wrap;
+  -webkit-flex-flow: project-container wrap;
   justify-content: space-around;
 }
 
-.show {
-	width: 30%;
-	line-height: normal;
-	margin: 0;
+.carousel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
 }
 
-.show img {
-	width: 50%;
-	display: block;
-	justify-content: center;
+.projects {
+	margin: 0;
+	padding: 0;
+}
+
+.projects li {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style: none;
+}
+
+.active {
+	height: 400px;
+}
+
+.active li {
+	position: absolute;
+	top: 400px;
+
+	opacity: 0;
+	transition: 1s all ease-in;
+}
+
+.active li.current {
+	top: 0px;
+
+	opacity: 1;
+}
+
+.buttons {
+	margin: 0 auto;
+	width: 180px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.buttons button {
+	margin: 20px;
+	padding: 10px;
+	color: white;
+	background: #70C4AF;
+	border: none;
+	font-size: 1.5em;
+}
+
+.project-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+	padding: 0;
+  clear: both;
+	border: 0;
+	margin-bottom: 100px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.project-container img {
+  width: 40%;
+  height: auto;
+  padding: 0;
+  margin: 10px;
+  float: left;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  height: auto;
+  padding: 0;
+  margin: 10px;
+	font-size: .9em;
+}
+
+.right h1, h2, h3 {
+	padding: 0;
+	margin: 0;
 }
