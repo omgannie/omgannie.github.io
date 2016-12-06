@@ -10,7 +10,7 @@ footer {
   font-size: 1em;
 }
 
- .numbers {
+.numbers {
   position: fixed;
   z-index: 0;
   top: 10%;
@@ -27,7 +27,7 @@ footer {
   list-style-type: none;
 }
 
- .code {
+.code {
   position: fixed;
   z-index: 0;
   top: 12.5%;
@@ -42,61 +42,57 @@ footer {
 }
 
 .code b {
-	color: #9581DA;
-	font-weight: normal;
-	}
-
-	.code i {
-		font-style: normal;
-		color: #8ADE98;
-		}
-
-		.code u {
-			text-decoration: none;
-			color:#E7A15E;
-			}
-
-			.code a {
-				color: pink;
-				text-decoration: none;
-				font-weight: bold;
-        transition: 0.3s all ease-in;
-				}
-
-      .code a:hover {
-        color: #F2545B;
-      }
-
-
-	@media only screen and (max-width: 450px) {
-
-			footer {
-				position: relative;
-				}
-
- .numbers {
-  position: fixed;
-  z-index: 0;
-  top: 10%;
-  height: 100%;
-  text-align: right;
+  color: #9581DA;
   font-weight: normal;
-  color: #B0B0B0;
-  font-size: 12px;
-  display: block;
 }
 
- .code {
-  position: fixed;
-  z-index: 0;
-  top: 12.5%;
-  height: 100%;
-  left: 15%;
-  text-align: left;
-  font-weight: normal;
-  color: #ccc;
-  font-size: 12px;
-  letter-spacing: -0.5px;
-  display: block;
+.code i {
+  font-style: normal;
+  color: #8ADE98;
 }
-		}
+
+.code u {
+  text-decoration: none;
+  color:#E7A15E;
+}
+
+.code a {
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s all ease-in;
+}
+
+.code a:hover {
+  color: #F2545B;
+}
+
+
+@media only screen and (max-width: 450px) {
+
+  footer {
+    position: relative;
+  }
+
+  .numbers {
+    position: fixed;
+    z-index: 0;
+    top: 10%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 12px;
+    display: block;
+  }
+
+  .code {
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    font-weight: normal;
+    color: #ccc;
+    font-size: 12px;
+    letter-spacing: -0.5px;
+    display: block;
+    line-height: 1.25;
+  }
+}

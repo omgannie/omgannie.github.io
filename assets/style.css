@@ -262,9 +262,10 @@ main #projects {
 
 .buttons {
 	margin: 0 auto;
-	width: 180px;
+	width: 200px;
 	display: flex;
 	justify-content: space-around;
+  background-color: transparent;
 }
 
 .buttons button {
@@ -312,13 +313,37 @@ li {
 	margin: 0;
 }
 
-@media only screen and (max-wdith: 375px) {
+@media only screen and (max-width: 375px) {
   header h1 {
-    font-size: 2em;
+    font-size: 2.3em;
+    letter-spacing: -1px;
   }
 
   .arrow {
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
+  }
+
+  main h1 {
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .active {
+    height: 460px;
+  }
+
+  .project-container img {
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .right {
+    float: none;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
   }
 }
