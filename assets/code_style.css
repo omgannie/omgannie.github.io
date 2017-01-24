@@ -58,7 +58,8 @@ footer {
 
 .code a {
   color: pink;
-  text-decoration: none;
+  line-height: 1.5;
+  border-bottom: 1px dotted red;
   font-weight: bold;
   transition: 0.3s all ease-in;
 }
