@@ -1,0 +1,12 @@
+@import "animate.css";
+
+header {
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    background-size: cover;
+}
+
+.animate__fadeInDown {
+    --animate-duration: 2s;
+}
